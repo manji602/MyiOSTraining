@@ -23,6 +23,8 @@
 		24CC3E6518C69BFF00AA9A1D /* MixiSampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CC3E6318C69BFF00AA9A1D /* MixiSampleViewController.xib */; };
 		24CC3E7118C6A84F00AA9A1D /* MixiSampleChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CC3E6F18C6A84F00AA9A1D /* MixiSampleChildViewController.m */; };
 		24CC3E7218C6A84F00AA9A1D /* MixiSampleChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24CC3E7018C6A84F00AA9A1D /* MixiSampleChildViewController.xib */; };
+		24F64F9C18C7EED20020DD5A /* MySampleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F64F9B18C7EED20020DD5A /* MySampleEntity.m */; };
+		24F64F9F18C7F4E30020DD5A /* TestQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F64F9E18C7F4E30020DD5A /* TestQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		24CC3E6E18C6A84F00AA9A1D /* MixiSampleChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixiSampleChildViewController.h; sourceTree = "<group>"; };
 		24CC3E6F18C6A84F00AA9A1D /* MixiSampleChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixiSampleChildViewController.m; sourceTree = "<group>"; };
 		24CC3E7018C6A84F00AA9A1D /* MixiSampleChildViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MixiSampleChildViewController.xib; sourceTree = "<group>"; };
+		24F64F9A18C7EED20020DD5A /* MySampleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySampleEntity.h; sourceTree = "<group>"; };
+		24F64F9B18C7EED20020DD5A /* MySampleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySampleEntity.m; sourceTree = "<group>"; };
+		24F64F9D18C7F4E30020DD5A /* TestQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestQueue.h; sourceTree = "<group>"; };
+		24F64F9E18C7F4E30020DD5A /* TestQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestQueue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,10 @@
 				24CC3E6E18C6A84F00AA9A1D /* MixiSampleChildViewController.h */,
 				24CC3E6F18C6A84F00AA9A1D /* MixiSampleChildViewController.m */,
 				24CC3E7018C6A84F00AA9A1D /* MixiSampleChildViewController.xib */,
+				24F64F9A18C7EED20020DD5A /* MySampleEntity.h */,
+				24F64F9B18C7EED20020DD5A /* MySampleEntity.m */,
+				24F64F9D18C7F4E30020DD5A /* TestQueue.h */,
+				24F64F9E18C7F4E30020DD5A /* TestQueue.m */,
 			);
 			path = UIViewControllerSample;
 			sourceTree = "<group>";
@@ -256,10 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F64F9C18C7EED20020DD5A /* MySampleEntity.m in Sources */,
 				24CC3E4318C69B7400AA9A1D /* AppDelegate.m in Sources */,
 				24CC3E3F18C69B7400AA9A1D /* main.m in Sources */,
 				24CC3E7118C6A84F00AA9A1D /* MixiSampleChildViewController.m in Sources */,
 				24CC3E6418C69BFF00AA9A1D /* MixiSampleViewController.m in Sources */,
+				24F64F9F18C7F4E30020DD5A /* TestQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +474,7 @@
 				24CC3E5D18C69B7400AA9A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24CC3E5E18C69B7400AA9A1D /* Build configuration list for PBXNativeTarget "UIViewControllerSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +483,7 @@
 				24CC3E6018C69B7400AA9A1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

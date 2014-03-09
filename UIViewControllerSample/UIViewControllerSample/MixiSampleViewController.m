@@ -26,7 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    MySampleEntity *entity = [[MySampleEntity alloc] init];
+    NSLog(@"entity %@", entity.entry);
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,6 +37,10 @@
 }
 
 - (IBAction)okButtonPush:(id)sender {
+    [self openChildViewController];
+}
+
+- (void)openChildViewController {
     MixiSampleChildViewController *childVC = [[MixiSampleChildViewController alloc]init];
     childVC.delegate = self;
     [self presentViewController:childVC animated:YES completion:nil];
@@ -43,7 +48,7 @@
 
 #pragma mark - MixiSampleChildViewControllerDelegate methods
 - (void)didTappedCloseButton {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^(void){ [self openChildViewController]; }];
 }
 
 - (void)dealloc {

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MixiSampleChildViewController.h"
+#import "MySampleEntity.h"
+#import "TestQueue.h"
 
 @interface MixiSampleViewController : UIViewController <MixiChildViewControllerDelegate>
 
@@ -16,5 +18,6 @@
 
 - (IBAction)okButtonPush:(id)sender;
 - (void)didTappedCloseButton;
+- (void)openChildViewController;
 
 @end
