@@ -18,7 +18,9 @@
     [self.window makeKeyAndVisible];
     
     SampleViewController *vc = [[SampleViewController alloc] initWithNibName:@"SampleViewController" bundle:nil];
-    self.window.rootViewController = vc;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.window.rootViewController = navigationController;
     
     return YES;
 }

@@ -30,6 +30,7 @@
     // Do any additional setup after loading the view from its nib.
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    self.title = [NSString stringWithFormat:@"window %d", [self.navigationController.viewControllers count]];
 
 }
 
@@ -52,6 +53,13 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row]; // 何番目のセルかを表示させる
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SampleViewController *viewController = [[SampleViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end
