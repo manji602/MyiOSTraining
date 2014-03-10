@@ -19,6 +19,7 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:_viewController];
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    [self customizeAppearance];
     return YES;
 }
 
@@ -47,6 +48,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)customizeAppearance
+{
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor orangeColor]];
 }
 
 @end
