@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		243CC48318CE8A3E00055A4F /* SampleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243CC48218CE8A3E00055A4F /* SampleTableCell.m */; };
+		243CC48518CE8AA300055A4F /* SampleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243CC48418CE8AA300055A4F /* SampleTableCell.xib */; };
+		243CC48818CE8D8500055A4F /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 243CC48718CE8D8500055A4F /* dog.jpg */; };
 		2465104918CDB92100E99F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2465104818CDB92100E99F0C /* Foundation.framework */; };
 		2465104B18CDB92100E99F0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2465104A18CDB92100E99F0C /* CoreGraphics.framework */; };
 		2465104D18CDB92100E99F0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2465104C18CDB92100E99F0C /* UIKit.framework */; };
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		243CC48118CE8A3E00055A4F /* SampleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableCell.h; sourceTree = "<group>"; };
+		243CC48218CE8A3E00055A4F /* SampleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableCell.m; sourceTree = "<group>"; };
+		243CC48418CE8AA300055A4F /* SampleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableCell.xib; sourceTree = "<group>"; };
+		243CC48718CE8D8500055A4F /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
 		2465104518CDB92100E99F0C /* UITableViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITableViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2465104818CDB92100E99F0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2465104A18CDB92100E99F0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		243CC48618CE8D5D00055A4F /* images */ = {
+			isa = PBXGroup;
+			children = (
+				243CC48718CE8D8500055A4F /* dog.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		2465103C18CDB92100E99F0C = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +127,7 @@
 		2465104E18CDB92100E99F0C /* UITableViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				243CC48618CE8D5D00055A4F /* images */,
 				2465105718CDB92100E99F0C /* AppDelegate.h */,
 				2465105818CDB92100E99F0C /* AppDelegate.m */,
 				2465105A18CDB92100E99F0C /* Images.xcassets */,
@@ -119,6 +135,9 @@
 				2465107718CDB93500E99F0C /* SampleViewController.h */,
 				2465107818CDB93500E99F0C /* SampleViewController.m */,
 				2465107918CDB93500E99F0C /* SampleViewController.xib */,
+				243CC48118CE8A3E00055A4F /* SampleTableCell.h */,
+				243CC48218CE8A3E00055A4F /* SampleTableCell.m */,
+				243CC48418CE8AA300055A4F /* SampleTableCell.xib */,
 			);
 			path = UITableViewSample;
 			sourceTree = "<group>";
@@ -227,7 +246,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2465105318CDB92100E99F0C /* InfoPlist.strings in Resources */,
+				243CC48818CE8D8500055A4F /* dog.jpg in Resources */,
 				2465107B18CDB93500E99F0C /* SampleViewController.xib in Resources */,
+				243CC48518CE8AA300055A4F /* SampleTableCell.xib in Resources */,
 				2465105B18CDB92100E99F0C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +270,7 @@
 			files = (
 				2465105918CDB92100E99F0C /* AppDelegate.m in Sources */,
 				2465105518CDB92100E99F0C /* main.m in Sources */,
+				243CC48318CE8A3E00055A4F /* SampleTableCell.m in Sources */,
 				2465107A18CDB93500E99F0C /* SampleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +474,7 @@
 				2465107318CDB92100E99F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2465107418CDB92100E99F0C /* Build configuration list for PBXNativeTarget "UITableViewSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +483,7 @@
 				2465107618CDB92100E99F0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

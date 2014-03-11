@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SampleTableCell.h"
 
 @interface SampleViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
