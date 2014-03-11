@@ -31,7 +31,6 @@
     _tableView.delegate = self;
     _tableView.dataSource = self;
     self.title = [NSString stringWithFormat:@"window %d", [self.navigationController.viewControllers count]];
-//    [_tableView registerClass:[SampleTableCell class] forCellReuseIdentifier:@"Cell"];
     [_tableView registerNib:[UINib nibWithNibName:@"SampleTableCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
 
 }
