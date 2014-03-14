@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>2AF2A705-6AB3-4DE1-9DF0-299D059D9153</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UITableViewSampleWithPullToRefresh</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C761A429-59A2-402E-9006-3C8010E489E2</key>
+		<string>ssh://github.com/manji602/MyiOSTraining.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UITableViewSampleWithPullToRefresh/UITableViewSampleWithPullToRefresh.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C761A429-59A2-402E-9006-3C8010E489E2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/manji602/MyiOSTraining.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C761A429-59A2-402E-9006-3C8010E489E2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C761A429-59A2-402E-9006-3C8010E489E2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyiOSTraining</string>
+		</dict>
+	</array>
+</dict>
+</plist>
