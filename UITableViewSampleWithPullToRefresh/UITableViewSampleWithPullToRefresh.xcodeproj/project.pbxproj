@@ -21,8 +21,6 @@
 		24310C9418CFDB7A00BB64AF /* UITableViewSampleWithPullToRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24310C9318CFDB7A00BB64AF /* UITableViewSampleWithPullToRefreshTests.m */; };
 		24310CAF18CFE43000BB64AF /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24310CAD18CFE43000BB64AF /* SampleViewController.m */; };
 		24310CB018CFE43000BB64AF /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24310CAE18CFE43000BB64AF /* SampleViewController.xib */; };
-		24310CB418CFE68300BB64AF /* SampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24310CB218CFE68300BB64AF /* SampleTableViewController.m */; };
-		24310CB518CFE68300BB64AF /* SampleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24310CB318CFE68300BB64AF /* SampleTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,9 +53,6 @@
 		24310CAC18CFE43000BB64AF /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		24310CAD18CFE43000BB64AF /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 		24310CAE18CFE43000BB64AF /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
-		24310CB118CFE68300BB64AF /* SampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewController.h; sourceTree = "<group>"; };
-		24310CB218CFE68300BB64AF /* SampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewController.m; sourceTree = "<group>"; };
-		24310CB318CFE68300BB64AF /* SampleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,9 +119,6 @@
 				24310CAC18CFE43000BB64AF /* SampleViewController.h */,
 				24310CAD18CFE43000BB64AF /* SampleViewController.m */,
 				24310CAE18CFE43000BB64AF /* SampleViewController.xib */,
-				24310CB118CFE68300BB64AF /* SampleTableViewController.h */,
-				24310CB218CFE68300BB64AF /* SampleTableViewController.m */,
-				24310CB318CFE68300BB64AF /* SampleTableViewController.xib */,
 			);
 			path = UITableViewSampleWithPullToRefresh;
 			sourceTree = "<group>";
@@ -237,7 +229,6 @@
 				24310C7918CFDB7A00BB64AF /* InfoPlist.strings in Resources */,
 				24310CB018CFE43000BB64AF /* SampleViewController.xib in Resources */,
 				24310C8118CFDB7A00BB64AF /* Images.xcassets in Resources */,
-				24310CB518CFE68300BB64AF /* SampleTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +250,6 @@
 				24310C7F18CFDB7A00BB64AF /* AppDelegate.m in Sources */,
 				24310C7B18CFDB7A00BB64AF /* main.m in Sources */,
 				24310CAF18CFE43000BB64AF /* SampleViewController.m in Sources */,
-				24310CB418CFE68300BB64AF /* SampleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +452,7 @@
 				24310C9918CFDB7A00BB64AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24310C9A18CFDB7A00BB64AF /* Build configuration list for PBXNativeTarget "UITableViewSampleWithPullToRefreshTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +461,7 @@
 				24310C9C18CFDB7A00BB64AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SampleTableViewController.h"
 
-@interface SampleViewController : UIViewController
+@interface SampleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UIScrollView *subView;
-
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
 @end
