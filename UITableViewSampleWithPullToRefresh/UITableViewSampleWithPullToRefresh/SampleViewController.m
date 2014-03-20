@@ -30,6 +30,10 @@
     self.tableView.dataSource = self;
     self.tableView.delegate   = self;
     
+    //plistの読み込み
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"sampleData" ofType:@"plist"];
+    _elements = [NSArray arrayWithContentsOfFile:plistPath];
+    
     // UIRefreshControlの生成
     self.refreshControl = [[UIRefreshControl alloc] init];
 
@@ -38,6 +42,11 @@
     
     // tableViewControllerのrefeshControlとしてセット
     [self.tableView addSubview:_refreshControl];
+    
+    //custom cell
+    [_tableView registerNib:[UINib nibWithNibName:@"SampleTableViewCell" bundle:nil] forCellReuseIdentifier:@"Cell"];
+    
+    _customCell = [_tableView dequeueReusableCellWithIdentifier:@"Cell"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,12 +64,22 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-    }
-    cell.textLabel.text = [NSString stringWithFormat:@"%d", indexPath.row]; // 何番目のセルかを表示させました
+    SampleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: @"Cell"];
+
+    NSString *text = [_elements objectAtIndex: indexPath.row];
+
+    cell.labelText.text = text;
+    cell.labelText.numberOfLines = 0;
+    [cell.labelText sizeToFit];
+
     return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SampleTableViewCell *cell = (SampleTableViewCell*)[self tableView:_tableView cellForRowAtIndexPath:indexPath];
+    return cell.height;
 }
 
 //refreshControl

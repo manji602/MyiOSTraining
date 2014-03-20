@@ -21,6 +21,10 @@
 		24310C9418CFDB7A00BB64AF /* UITableViewSampleWithPullToRefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24310C9318CFDB7A00BB64AF /* UITableViewSampleWithPullToRefreshTests.m */; };
 		24310CAF18CFE43000BB64AF /* SampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24310CAD18CFE43000BB64AF /* SampleViewController.m */; };
 		24310CB018CFE43000BB64AF /* SampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24310CAE18CFE43000BB64AF /* SampleViewController.xib */; };
+		245207CE18D91D540031E974 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 245207CD18D91D540031E974 /* dog.jpg */; };
+		245207D118D920790031E974 /* SampleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 245207D018D920790031E974 /* SampleTableViewCell.m */; };
+		245207D318D920910031E974 /* SampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 245207D218D920910031E974 /* SampleTableViewCell.xib */; };
+		24B7BFBB18D7C01F00024D56 /* sampleData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24B7BFBA18D7C01F00024D56 /* sampleData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,11 @@
 		24310CAC18CFE43000BB64AF /* SampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleViewController.h; sourceTree = "<group>"; };
 		24310CAD18CFE43000BB64AF /* SampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleViewController.m; sourceTree = "<group>"; };
 		24310CAE18CFE43000BB64AF /* SampleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleViewController.xib; sourceTree = "<group>"; };
+		245207CD18D91D540031E974 /* dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dog.jpg; sourceTree = "<group>"; };
+		245207CF18D920790031E974 /* SampleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleTableViewCell.h; sourceTree = "<group>"; };
+		245207D018D920790031E974 /* SampleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleTableViewCell.m; sourceTree = "<group>"; };
+		245207D218D920910031E974 /* SampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SampleTableViewCell.xib; sourceTree = "<group>"; };
+		24B7BFBA18D7C01F00024D56 /* sampleData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sampleData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +121,8 @@
 		24310C7418CFDB7A00BB64AF /* UITableViewSampleWithPullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				245207CC18D91D540031E974 /* images */,
+				24B7BFB918D7BFDA00024D56 /* data */,
 				24310C7D18CFDB7A00BB64AF /* AppDelegate.h */,
 				24310C7E18CFDB7A00BB64AF /* AppDelegate.m */,
 				24310C8018CFDB7A00BB64AF /* Images.xcassets */,
@@ -119,6 +130,9 @@
 				24310CAC18CFE43000BB64AF /* SampleViewController.h */,
 				24310CAD18CFE43000BB64AF /* SampleViewController.m */,
 				24310CAE18CFE43000BB64AF /* SampleViewController.xib */,
+				245207CF18D920790031E974 /* SampleTableViewCell.h */,
+				245207D018D920790031E974 /* SampleTableViewCell.m */,
+				245207D218D920910031E974 /* SampleTableViewCell.xib */,
 			);
 			path = UITableViewSampleWithPullToRefresh;
 			sourceTree = "<group>";
@@ -150,6 +164,22 @@
 				24310C9018CFDB7A00BB64AF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		245207CC18D91D540031E974 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				245207CD18D91D540031E974 /* dog.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		24B7BFB918D7BFDA00024D56 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				24B7BFBA18D7C01F00024D56 /* sampleData.plist */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				245207CE18D91D540031E974 /* dog.jpg in Resources */,
+				245207D318D920910031E974 /* SampleTableViewCell.xib in Resources */,
 				24310C7918CFDB7A00BB64AF /* InfoPlist.strings in Resources */,
 				24310CB018CFE43000BB64AF /* SampleViewController.xib in Resources */,
+				24B7BFBB18D7C01F00024D56 /* sampleData.plist in Resources */,
 				24310C8118CFDB7A00BB64AF /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24310C7F18CFDB7A00BB64AF /* AppDelegate.m in Sources */,
+				245207D118D920790031E974 /* SampleTableViewCell.m in Sources */,
 				24310C7B18CFDB7A00BB64AF /* main.m in Sources */,
 				24310CAF18CFE43000BB64AF /* SampleViewController.m in Sources */,
 			);
