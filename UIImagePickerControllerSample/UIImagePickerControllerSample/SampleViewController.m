@@ -53,10 +53,8 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     [picker dismissViewControllerAnimated:YES completion:nil];
-    NSLog(@"setimage");
     
     [self.image setImage:info[UIImagePickerControllerOriginalImage]];
-//    [_photoImageView setImage:info[UIImagePickerControllerOriginalImage]];
 }
 
 @end
