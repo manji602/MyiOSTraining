@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WebViewSampleViewController">
+            <connections>
+                <outlet property="navigationBar" destination="3Ru-gO-Bsc" id="aKe-rA-ncM"/>
+                <outlet property="nextButton" destination="Eje-Fd-y4n" id="FiA-jq-tty"/>
+                <outlet property="previousButton" destination="zu8-KR-r5Q" id="oEL-Qs-vmR"/>
+                <outlet property="reloadButton" destination="i6m-xe-mcJ" id="vXs-Bm-4zI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="Mpu-Jx-b6G" id="imh-Gu-dpS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mpu-Jx-b6G">
+                    <rect key="frame" x="0.0" y="87" width="320" height="304"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7rI-5d-pqq"/>
+                    </connections>
+                </webView>
+                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ru-gO-Bsc">
+                    <rect key="frame" x="0.0" y="32" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <items>
+                        <navigationItem title="Title" id="Lhf-LD-kMo"/>
+                    </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ZTu-ds-h6H"/>
+                    </connections>
+                </navigationBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TQk-hT-YcE">
+                    <rect key="frame" x="0.0" y="404" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="戻る" id="zu8-KR-r5Q">
+                            <connections>
+                                <action selector="onClickPreviousButton" destination="-1" id="7R2-kO-VQ0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="進む" id="Eje-Fd-y4n">
+                            <connections>
+                                <action selector="onClickNextButton" destination="-1" id="QJ9-lW-PqN"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="リロード" id="i6m-xe-mcJ">
+                            <connections>
+                                <action selector="onClickReloadButton" destination="-1" id="8f3-VL-4u0"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
